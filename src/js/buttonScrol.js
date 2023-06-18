@@ -6,7 +6,6 @@ window.addEventListener('scroll', onScroll);
 onTopButton.addEventListener('click', onTop);
 
 function onScroll() {
-    const scrolled = window.pageYOffset;
     const scrolled = window.scrollY;
     const coords = document.documentElement.clientHeight;
 
@@ -19,7 +18,6 @@ function onScroll() {
 };
 
 function onTop() {
-    if (window.pageYOffset > 0) {
     if (window.scrollY > 0) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
